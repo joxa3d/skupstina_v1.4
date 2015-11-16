@@ -1,0 +1,2572 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <comment>Always look at the mouse.</comment>
+        <variable constant="0" name="BulletNumber" sid="5955361332073561" static="0" type="number">0</variable>
+        <event-block sid="3595798947943802">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4780764183758866" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="628619832239858" type="tacka">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y-70</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="BulletNumber2" sid="2787976609171908" static="0" type="number">0</variable>
+        <event-block sid="9201795751954811">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2938664948968579" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="6869616597511274" type="tacka2">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y-30</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="BulletNumber3" sid="8364181487781027" static="0" type="number">0</variable>
+        <event-block sid="7365480336641295">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3254143029374277" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="9208536451373153" type="Tacka3">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="BulletNumber5" sid="7869967955018474" static="0" type="number">0</variable>
+        <event-block sid="1274295233026387">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2649073918986573" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="5706247814284331" type="Tacka5">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Mousetarget, set position</comment>
+        <variable constant="0" name="BulletNumber4" sid="3561329664115281" static="0" type="number">0</variable>
+        <event-block sid="7905977831447884">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9629122400912267" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="2200505253233091" type="Tacka4">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8635235880433256">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2465657797618237" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6558074284939851" type="zelinitarget">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5036870820045639">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="6639340145091014" type="Mouse">
+                    <param id="0" name="Object">Nestaje</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="646537031016259" type="System">
+                    <param id="0" name="Variable">BulletNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4146099772212859" type="tacka">
+                    <param id="0" name="Object">Paradajz</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8384714233414364" type="System">
+                    <param id="0" name="Variable">BulletNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4130089979818651">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="3414566444595225" type="Mouse">
+                    <param id="0" name="Object">Nestaje</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2520602501431661" type="System">
+                    <param id="0" name="Variable">BulletNumber2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="674430514069051" type="tacka2">
+                    <param id="0" name="Object">Kupus</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2297797428371709" type="System">
+                    <param id="0" name="Variable">BulletNumber2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9247320256576154">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9177911723828018" type="Mouse">
+                    <param id="0" name="Object">Nestaje</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9658776669595877" type="System">
+                    <param id="0" name="Variable">BulletNumber3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4624754088499081" type="Tacka3">
+                    <param id="0" name="Object">Banana</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3178046258520969" type="System">
+                    <param id="0" name="Variable">BulletNumber3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2953933850902555">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9097897455859634" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">aftermouse</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4866197650252896" type="System">
+                    <param id="0" name="Variable">BulletNumber5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="7910406315633636" type="Tacka5">
+                    <param id="0" name="Object">Flajka</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2630536829158583" type="System">
+                    <param id="0" name="Variable">BulletNumber5</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4331869631424067">
+            <conditions>
+                <condition id="0" name="On click" sid="2858307272548715" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6942671367386569" type="System">
+                    <param id="0" name="Variable">BulletNumber4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="2908911791334624" type="Tacka4">
+                    <param id="0" name="Object">mousetarget</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5305112182010133" type="Tacka4">
+                    <param id="0" name="Object">Nestaje</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6526951025349837" type="System">
+                    <param id="0" name="Variable">BulletNumber4</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1663246655401751">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="7502168651221609" type="Nestaje" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9100069335234199" type="zelinitarget">
+                    <param id="0" name="Object">aftermouse</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1222800684434071">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="7330277094976683" type="Mouse">
+                    <param id="0" name="Object">bckgBezLjudi</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set cursor from sprite" sid="5071604071183125" type="Mouse">
+                    <param id="0" name="Sprite">Nisan</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="5632640602534038" title="Tacke na Prozorima, Politicari">
+            <sub-events>
+                <event-block sid="4090438134114231">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="998890863661603" type="System">
+                            <param id="0" name="Interval (seconds)">random(4, 5)</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="5822849166097749" type="System">
+                            <param id="0" name="Object">Tacka6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="6024338079263946" type="Tacka6">
+                            <param id="0" name="Object">DiyeRuku</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="Variable2" sid="8103588875376345" static="0" type="number">0</variable>
+                <event-block sid="3944922352141735">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9845543687533084" type="System">
+                            <param id="0" name="Interval (seconds)">random(5, 9)</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="2564138188415197" type="System">
+                            <param id="0" name="Object">Tacka7</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1147866927987086" type="System">
+                            <param id="0" name="Variable">Variable2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="3465428916100858" type="Tacka7">
+                            <param id="0" name="Object">vucic</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1813274377677605" type="System">
+                            <param id="0" name="Variable">Variable2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group collapsed="1" description="" sid="3506710994717143" title="Vucic Tacka">
+                    <sub-events>
+                        <event-block sid="7136905779338552">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="7300029043048593" type="vucic" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="8948730756801498" type="vucic" />
+                                <action id="-4" name="Set position to another object" sid="6696057859661116" type="tacka8">
+                                    <param id="0" name="Object">vucic</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9572525747718919">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="7720189562681624" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="1369991098215171" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1605066654429925">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="4017601160847444" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9203708224468196" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc2</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8712160257844664">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="2529959739209834" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="1546020287216376" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc3</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6307652644095069">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="8089994238499673" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="3989489045470299" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc4</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6104728288971709">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="391417052118853" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="6229529760501363" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc5</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8701096075119986">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9126730898115879" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2764858334892846" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc6</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9138802529480697">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="6611397405145112" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9167569999596979" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc7</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5570919431569669">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="8641180341731839" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9154085920468175" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc8</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2846692474969655">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="3689645440336892" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="7643681530692513" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc9</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1797785390763336">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="2403706564771923" type="tacka8">
+                                    <param id="0" name="Object">PrazanColl10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2697992140339217" type="tacka8">
+                                    <param id="0" name="Object">PrazanTrgrVcc10</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group collapsed="1" description="" sid="8286397046164635" title="Toma Tacka">
+                    <sub-events>
+                        <event-block sid="128822329965158">
+                            <conditions>
+                                <condition id="5" name="On any finished" sid="6263579068654278" type="DiyeRuku" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="2967485351446547" type="DiyeRuku" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="8452760248134815">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="4002021093252789" type="DiyeRuku" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="6472196078311591" type="tacka9">
+                                    <param id="0" name="Object">DiyeRuku</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="6650792032047962" type="vulin">
+                                    <param id="0" name="Object">DiyeRuku</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6194697072615163">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="3052625123719813" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2142368197043349" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8626047429361628">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="3229910466469954" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="7615976110199606" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr2</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2521983124809916">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9918456061980333" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="6640326955903903" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr3</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2091540179200889">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="2983944729911773" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="5039493767776308" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr4</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8895379600091914">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="7835285057945961" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2754410020735988" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr5</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4070308764284978">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="3933052633049766" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="602599336808701" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr6</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4046965297340648">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9062542073522521" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="5538497430172284" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr7</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2703259769054213">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9017815464253782" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9524195324908463" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr8</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="859162068446453">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="1057022407459282" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="8529863598327664" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr9</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5881383343992582">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="191280097085612" type="tacka9">
+                                    <param id="0" name="Object">PrazanColl10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="2216234361044391" type="tacka9">
+                                    <param id="0" name="Object">PrazanTrgr10</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9533354998925322" title="Politicari, energija">
+            <sub-events>
+                <event-block sid="1858257408738071">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6782936048222279" type="Paradajz">
+                            <param id="0" name="Object">vulin</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="2413864929231117" type="vulin">
+                            <param id="0" name="Instance variable">healt2</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="4138347448912876" type="Paradajz">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2261694769320738" type="Paradajz" />
+                        <action id="-5" name="Set width" sid="2138451185780977" type="TomaEnergi">
+                            <param id="0" name="Width">vulin.healt2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="581642058293638" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="Variable13" sid="779422077965751" static="0" type="number">0</variable>
+                <event-block sid="7311201194697951">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="6276045540625526" type="vulin" />
+                        <condition id="-14" name="Compare variable" sid="8279524029199951" type="System">
+                            <param id="0" name="Variable">Variable13</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="7884821382345132" type="vulin" />
+                        <action id="-9" name="Set value" sid="7582689016715521" type="System">
+                            <param id="0" name="Variable">Variable13</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2559251585558389">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2382614271058383" type="vulin">
+                            <param id="0" name="Instance variable">healt2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1065060547779586" type="Tacka6" />
+                        <action id="-9" name="Destroy" sid="1341786363266639" type="vulin" />
+                        <action id="-9" name="Destroy" sid="6865691416187963" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4161637147681254" title="Politicari Collision izmedju sebe">
+            <sub-events>
+                <event-block sid="1639481796722534">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="895933559355822" type="PrazanTrgr">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8698273578812907" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9900441949821619">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="449381787754834" type="PrazanTrgr2">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1358156708961219" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8603789031343816">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="2020404069299146" type="PrazanTrgr3">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="457479289776692" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2364346986733468">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="6736002019004018" type="PrazanTrgr4">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1335993683536313" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2628801989338196">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="3202165918036968" type="PrazanTrgr5">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3663783357255363" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3767627467009781">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="6903206656654496" type="PrazanTrgr6">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9681838140534123" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8056097139278072">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="2354846713483631" type="PrazanTrgr7">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9593740765994316" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4046457230239747">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="5112585501494884" type="PrazanTrgr8">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8077287519215181" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2078563054837767">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="948756049946745" type="PrazanTrgr9">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4102659494516469" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2274101955041307">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4221158145358676" type="PrazanTrgr10">
+                            <param id="0" name="Object">vucic</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5014555592914976" type="vucic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6275775555469195">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7632084815200493" type="PrazanTrgrVcc">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="121208097733349" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="1105220513060892" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="5349693299395054">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7531827703965607" type="PrazanTrgrVcc2">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3506739007616685" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="3646101490183299" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="7784726916680096">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="643130239579202" type="PrazanTrgrVcc3">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9077287130039148" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="8331086390737957" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="5752293192682006">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="954510965485322" type="PrazanTrgrVcc4">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2348257661071811" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="1297304560883741" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="4327026923908094">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="3751798488050433" type="PrazanTrgrVcc5">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1578957918610578" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="7904055080340656" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="5017074647502765">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="5781214404568066" type="PrazanTrgrVcc6">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6350458517430532" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="6930785317577236" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="1132470364483513">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4992655164879949" type="PrazanTrgrVcc7">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6714154695967156" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="4191944308216929" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="5040817021656315">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4800384645343665" type="PrazanTrgrVcc8">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9017866274277623" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="7978403727782315" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="5032167609119254">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7881299856481403" type="PrazanTrgrVcc9">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3767099689673062" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="2121451793125629" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+                <event-block sid="5494565208173429">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="1676752936823045" type="PrazanTrgrVcc10">
+                            <param id="0" name="Object">DiyeRuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="158123837805998" type="DiyeRuku">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="1214474644824711" type="DiyeRuku" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="2814226836682469" title="Prozori Collision Moustarget">
+            <sub-events>
+                <variable constant="0" name="BulletNumber6" sid="6806219721706895" static="0" type="number">0</variable>
+                <event-block sid="6825060532771253">
+                    <conditions>
+                        <condition id="0" name="On click" sid="4604901227773688" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="9823637277962575" type="Prozor">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="8308270006529561" type="Prozor2">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="6686212155457764" type="Prozor3">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="4368215778294109" type="prozor4">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="2459320300815776" type="Prozor5">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="1301385292959822" type="Prozor6">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="814070781432936" type="Prozor7">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="7272987971803044" type="Prozor8">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="797542058060682" type="Prozor9">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="2987246582448434" type="Prozor10">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="8293924717927824" type="Prozor11">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="3197467442976684" type="Prozor12">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="5744656915823035" type="Prozor13">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="4468953825072533" type="Prozor14">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="5594733305216089" type="Prozor15">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="2677518280350758" type="Prozor16">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="797216229221272" type="Prozor17">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="8388246264557169" type="Prozor18">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1255692564288902">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8981543003762237" type="Prazan">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="9818151609847465" type="Prozor">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7967528874287842">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3148585652800036" type="Prozor" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2341460759360867" type="Prazan" />
+                    </actions>
+                </event-block>
+                <event-block sid="6961846606212905">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1357202319312002" type="Prazan2">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="8726393917744898" type="Prozor2">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2171166598843695">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="8135407632330759" type="Prozor2" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5167130034347426" type="Prazan2" />
+                    </actions>
+                </event-block>
+                <event-block sid="3772517151499084">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9750450905091537" type="Prazan3">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="9543418713858545" type="Prozor3">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6269371001317346">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="657482133370344" type="Prozor3" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9839172894255614" type="Prazan3" />
+                    </actions>
+                </event-block>
+                <event-block sid="8347698145232431">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6643541438942499" type="Prazan4">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="2930902715689045" type="prozor4">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9146224699816037">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="7521270387069509" type="prozor4" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7583839007002865" type="Prazan4" />
+                    </actions>
+                </event-block>
+                <event-block sid="9199206133789615">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6510669542058723" type="Prazan5">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="1461666396397495" type="Prozor5">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5815502449151517">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="4989399378849611" type="Prozor5" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9640280938664033" type="Prazan5" />
+                    </actions>
+                </event-block>
+                <event-block sid="6896311181722955">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="988593480828539" type="Prazan6">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="8588538360512799" type="Prozor6">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5765869869729786">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="6183733231524862" type="Prozor6" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7986021766506712" type="Prazan6" />
+                    </actions>
+                </event-block>
+                <event-block sid="5364455804259829">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5004919232716643" type="Prazan7">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="7800771858239833" type="Prozor7">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9583845109215496">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="9837083549092181" type="Prozor7" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2204307528065742" type="Prazan7" />
+                    </actions>
+                </event-block>
+                <event-block sid="7917131449924745">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8722581779915213" type="Prazan8">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="3271272352069712" type="Prozor8">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1256613912685905">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="8158647093897905" type="Prozor8" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5062846275988963" type="Prazan8" />
+                    </actions>
+                </event-block>
+                <event-block sid="2338568111259335">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3676115191036033" type="Prazan9">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="2781306409387294" type="Prozor9">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="138250425548592">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="4788165791823075" type="Prozor9" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7770627259485359" type="Prazan9" />
+                    </actions>
+                </event-block>
+                <event-block sid="4890094410230653">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="829392298848662" type="Prazan10">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="4272306288778236" type="Prozor10">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8404655110099049">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="1504816568528676" type="Prozor10" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2613685460306359" type="Prazan10" />
+                    </actions>
+                </event-block>
+                <event-block sid="5404852267044506">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8126406793634929" type="Prazan11">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="9455072120451798" type="Prozor11">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3977037401857926">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="5039974363928509" type="Prozor11" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7021606532883257" type="Prazan11" />
+                    </actions>
+                </event-block>
+                <event-block sid="3960564721272535">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4478727248111824" type="Prazan12">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="5700835297933044" type="Prozor12">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7799856372877667">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="2322366321380082" type="Prozor12" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3757303468630018" type="Prazan12" />
+                    </actions>
+                </event-block>
+                <event-block sid="8660204817157368">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="338771504473078" type="Prazan13">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="8530819535644086" type="Prozor13">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8224978726133282">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="94613156929592" type="Prozor13" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8948824828474924" type="Prazan13" />
+                    </actions>
+                </event-block>
+                <event-block sid="7836783684175037">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1381961860735365" type="Prazan14">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="5758557383121913" type="Prozor14">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2897113786102025">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="8971650892167215" type="Prozor14" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="124195944241734" type="Prazan14" />
+                    </actions>
+                </event-block>
+                <event-block sid="4838008302510281">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="137994424743508" type="Prazan15">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="5927283670497758" type="Prozor15">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4925913406521797">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3593715317996237" type="Prozor15" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1606889329492638" type="Prazan15" />
+                    </actions>
+                </event-block>
+                <event-block sid="5929669214502621">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3224913040021859" type="Prazan16">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="5202624336236961" type="Prozor16">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9819694687936864">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3751651798125135" type="Prozor16" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="731150132176679" type="Prazan16" />
+                    </actions>
+                </event-block>
+                <event-block sid="2512111884079398">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6411344326125149" type="Prazan17">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="6975532318721544" type="Prozor17">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5973503731079159">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="897518567145344" type="Prozor17" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4176902479004085" type="Prazan17" />
+                    </actions>
+                </event-block>
+                <event-block sid="5382089210746858">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7586600999745556" type="Prazan18">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="7390901762345324" type="Prozor18">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8537038952567181">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="689966537016419" type="Prozor18" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3949141036018172" type="Prazan18" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="3135250495080385" title="Oruzja Collision sa Moustargetom">
+            <sub-events>
+                <event-block sid="9856095694907523">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1087879171156987" type="Paradajz">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="259542383055696" type="Paradajz">
+                            <param id="0" name="Speed">170</param>
+                        </action>
+                        <action behavior="Bullet" id="2" name="Set gravity" sid="9503321678333736" type="Paradajz">
+                            <param id="0" name="Gravity">60</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="7463385938108067" type="Paradajz" />
+                        <action id="-9" name="Set value" sid="8027002985723363" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2214754840066929">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="874017556147188" type="Paradajz" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="4365685011515996" type="Paradajz">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="558595460912701">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1254700150346044" type="Kupus">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="5179377926366133" type="Kupus">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action behavior="Bullet" id="2" name="Set gravity" sid="391672525097518" type="Kupus">
+                            <param id="0" name="Gravity">90</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="8729504061734965" type="Kupus" />
+                        <action id="-9" name="Set value" sid="6294210787400934" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9919663743095773">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="8398977615775211" type="Kupus" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="9534698457466439" type="Kupus">
+                            <param id="0" name="Object">KupusSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="175908389754955" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7191104409824761">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8101241020382608" type="Banana">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="4870554659403437" type="Banana">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action behavior="Bullet" id="2" name="Set gravity" sid="813948079548648" type="Banana">
+                            <param id="0" name="Gravity">70</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="9244147932063866" type="Banana" />
+                        <action id="-9" name="Set value" sid="8931932877878125" type="System">
+                            <param id="0" name="Variable">BulletNumber3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2862076284965271">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="7253223670540757" type="Banana" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="9231743374574248" type="Banana">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5615528474464309">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5733261751533499" type="Flajka">
+                            <param id="0" name="Object">mousetarget</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="2311330221386081" type="Flajka">
+                            <param id="0" name="Speed">150</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="1188279761592723" type="Flajka" />
+                        <action id="-9" name="Set value" sid="5070150193072831" type="System">
+                            <param id="0" name="Variable">BulletNumber5</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6513217957496181">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="3189751938936309" type="Flajka" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="2119926855502483" type="Flajka">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8053763574479908" type="System">
+                            <param id="0" name="Variable">BulletNumber5</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="441320683245201" title="Oruzja Collision sa Prozorima">
+            <sub-events>
+                <event-block sid="9492886005358349">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8976840966875503" type="Paradajz">
+                            <param id="0" name="Object">Prozor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6985668031741776" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="738297839111852" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8011896994384154" type="Prozor" />
+                        <action id="0" name="Spawn another object" sid="655556639686475" type="Prozor">
+                            <param id="0" name="Object">ProzorPlpn</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="334009459279386" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="10079480244097">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7191544123822628" type="Kupus">
+                            <param id="0" name="Object">Prozor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5663740603622501" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="1862182773213136" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9466442510048014" type="Prozor" />
+                        <action id="0" name="Spawn another object" sid="4569408268490417" type="Prozor">
+                            <param id="0" name="Object">ProzorPlpn</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3419091162369451" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="93294775570197">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2148926628354838" type="Banana">
+                            <param id="0" name="Object">Prozor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6929124539013842" type="Banana" />
+                        <action id="0" name="Spawn another object" sid="7966525536845641" type="Banana">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5167538222559475" type="Prozor" />
+                        <action id="0" name="Spawn another object" sid="5643389389059706" type="Prozor">
+                            <param id="0" name="Object">ProzorPlpn</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6299055271118196" type="System">
+                            <param id="0" name="Variable">BulletNumber3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5846829195157234">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5027639080110021" type="Paradajz">
+                            <param id="0" name="Object">Prozor2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2655028833465675" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="4209219937081354" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7258142273791674" type="Prozor2" />
+                        <action id="0" name="Spawn another object" sid="6335429055699586" type="Prozor2">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4656730023087716" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="753083989449382">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4691231836130616" type="Kupus">
+                            <param id="0" name="Object">Prozor2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8058614890313267" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="6241853227107434" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1743719383386111" type="Prozor2" />
+                        <action id="0" name="Spawn another object" sid="53544341603538" type="Prozor2">
+                            <param id="0" name="Object">ProzorPlpn</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8671741959860072" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5596413954387984">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8978755342898874" type="Paradajz">
+                            <param id="0" name="Object">Prozor3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="261254999175251" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="6536454801095677" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4040764312128349" type="Prozor3" />
+                        <action id="0" name="Spawn another object" sid="3224571645230581" type="Prozor3">
+                            <param id="0" name="Object">ProzorPlpn3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5852548976379092" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4925386746871748">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9583531496453595" type="Kupus">
+                            <param id="0" name="Object">Prozor3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1369220362729599" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="6735201274508264" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7682645828243471" type="Prozor3" />
+                        <action id="0" name="Spawn another object" sid="8689986459418651" type="Prozor3">
+                            <param id="0" name="Object">ProzorPlpn3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9467299386289974" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8902405278187048">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8142350808777247" type="Paradajz">
+                            <param id="0" name="Object">prozor4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6307172783047348" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="5486605443476402" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7129293913252132" type="prozor4" />
+                        <action id="0" name="Spawn another object" sid="1091761512350098" type="prozor4">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8981513673159077" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5504456530217809">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1903951843144488" type="Kupus">
+                            <param id="0" name="Object">prozor4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9937723737508372" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="5599694791884101" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9592965993878295" type="prozor4" />
+                        <action id="0" name="Spawn another object" sid="3516388543709284" type="prozor4">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5631722956030985" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1845932121119343">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7305087878283222" type="Paradajz">
+                            <param id="0" name="Object">Prozor5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4098533403563379" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="8061597480656954" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1236917429279278" type="Prozor5" />
+                        <action id="0" name="Spawn another object" sid="3229829529198601" type="Prozor5">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6619338176388801" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7915446316712543">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7272905950165667" type="Kupus">
+                            <param id="0" name="Object">Prozor5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8660029039236961" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="609803017214489" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8018163815283717" type="Prozor5" />
+                        <action id="0" name="Spawn another object" sid="160227276593471" type="Prozor5">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1787174790923744" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9280387431537543">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6051706945318288" type="Paradajz">
+                            <param id="0" name="Object">Prozor6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="726454180876663" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="3535013899019457" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8935008104257001" type="Prozor6" />
+                        <action id="0" name="Spawn another object" sid="8173415974483111" type="Prozor6">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2975365491492066" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6564326546403562">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7998813454039822" type="Kupus">
+                            <param id="0" name="Object">Prozor6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8686361780686451" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="593611572151443" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3778811064877401" type="Prozor6" />
+                        <action id="0" name="Spawn another object" sid="2118019813858317" type="Prozor6">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9181464385792052" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="347618343283571">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2622588564558622" type="Paradajz">
+                            <param id="0" name="Object">Prozor7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3141849333610361" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="3657854501938817" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2398858069417669" type="Prozor7" />
+                        <action id="0" name="Spawn another object" sid="5405887491765564" type="Prozor7">
+                            <param id="0" name="Object">ProzorPlpn3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5402442138090287" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="929541345076405">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="775781753647136" type="Kupus">
+                            <param id="0" name="Object">Prozor7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7597645098639269" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="8965604846572042" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3498729051990276" type="Prozor7" />
+                        <action id="0" name="Spawn another object" sid="9852259216061767" type="Prozor7">
+                            <param id="0" name="Object">ProzorPlpn3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5089668608004541" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="359279179294754">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6675232903255395" type="Paradajz">
+                            <param id="0" name="Object">Prozor8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3312586989642924" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="9952262387209619" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5883376375176615" type="Prozor8" />
+                        <action id="0" name="Spawn another object" sid="4425255882754135" type="Prozor8">
+                            <param id="0" name="Object">ProzorPlpn</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1843646184312349" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7132151581771804">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9411850148170155" type="Kupus">
+                            <param id="0" name="Object">Prozor8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7459612566342004" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="428704218089922" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2416936545410177" type="Prozor8" />
+                        <action id="0" name="Spawn another object" sid="6165451796339097" type="Prozor8">
+                            <param id="0" name="Object">ProzorPlpn</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3420602784808748" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4422595654858835">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1404803283241404" type="Paradajz">
+                            <param id="0" name="Object">Prozor9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8494694884402421" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="4311075184310979" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="750702044345844" type="Prozor9" />
+                        <action id="0" name="Spawn another object" sid="7113863059270885" type="Prozor9">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6673275163047586" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6624703491067709">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5347301822595174" type="Kupus">
+                            <param id="0" name="Object">Prozor9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7309921148447687" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="401136545244685" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4064772701442002" type="Prozor9" />
+                        <action id="0" name="Spawn another object" sid="5295869999209408" type="Prozor9">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="275891708229813" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9652495226828248">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8687318142617893" type="Paradajz">
+                            <param id="0" name="Object">Prozor10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2714306204710604" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="7032042116740807" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="381162117907142" type="Prozor10" />
+                        <action id="0" name="Spawn another object" sid="811190289961291" type="Prozor10">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1877469190950396" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7911320236178333">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2550954390487722" type="Kupus">
+                            <param id="0" name="Object">Prozor10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7831299839418818" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="6571212761095485" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4835885083200018" type="Prozor10" />
+                        <action id="0" name="Spawn another object" sid="9809117740112316" type="Prozor10">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="247542249637774" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3017619330839671">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8449663133287203" type="Paradajz">
+                            <param id="0" name="Object">Prozor11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3534899692344234" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="2136926823739684" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7761566869267055" type="Prozor11" />
+                        <action id="0" name="Spawn another object" sid="6618519388928704" type="Prozor11">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1335754347792666" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6680927521064598">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7068545664598039" type="Kupus">
+                            <param id="0" name="Object">Prozor11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9976030057901186" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="6308928002199452" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2032746021174849" type="Prozor11" />
+                        <action id="0" name="Spawn another object" sid="7608611531548816" type="Prozor11">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9404870005968127" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5819784993565313">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2900250253898923" type="Paradajz">
+                            <param id="0" name="Object">Prozor12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2113499814310345" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="3725128412888527" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9100893827407212" type="Prozor12" />
+                        <action id="0" name="Spawn another object" sid="530673876934764" type="Prozor12">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="224019841495987" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6855762549934127">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8373969788762689" type="Kupus">
+                            <param id="0" name="Object">Prozor12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4263783554247316" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="8051589863626465" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5335478371962502" type="Prozor12" />
+                        <action id="0" name="Spawn another object" sid="9176086334896029" type="Prozor12">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8031535110896511" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7714163382493313">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8075262587657268" type="Paradajz">
+                            <param id="0" name="Object">Prozor13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4789041913779535" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="918030552409094" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5650781588432633" type="Prozor13" />
+                        <action id="0" name="Spawn another object" sid="7246724706106017" type="Prozor13">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1202500080607367" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9449665752752259">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2332375581267489" type="Kupus">
+                            <param id="0" name="Object">Prozor13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9654357994314536" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="7068765192377641" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5321724031469664" type="Prozor13" />
+                        <action id="0" name="Spawn another object" sid="2685145313919734" type="Prozor13">
+                            <param id="0" name="Object">ProzorPlpn4</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7969597169796526" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5867492258008775">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4997100097759566" type="Paradajz">
+                            <param id="0" name="Object">Prozor14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9762445524694905" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="9921934827857584" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="5877458093889168" type="Prozor14" />
+                        <action id="0" name="Spawn another object" sid="9983177050202579" type="Prozor14">
+                            <param id="0" name="Object">ProzorPlpn3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7877483586070767" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2465716995319101">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6917575416175993" type="Kupus">
+                            <param id="0" name="Object">Prozor14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8492687457014831" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="3694722959732718" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7669103395100961" type="Prozor14" />
+                        <action id="0" name="Spawn another object" sid="2860873916861931" type="Prozor14">
+                            <param id="0" name="Object">ProzorPlpn3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3409962404768097" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6293084865691678">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8795847168458191" type="Paradajz">
+                            <param id="0" name="Object">Prozor15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6498570051524521" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="1343588085253505" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="332369446922565" type="Prozor15" />
+                        <action id="0" name="Spawn another object" sid="5963299106040651" type="Prozor15">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="719534817348089" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9605960162287374">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5440033645708184" type="Kupus">
+                            <param id="0" name="Object">Prozor15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7831677924361569" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="921913624245137" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2568617566759051" type="Prozor15" />
+                        <action id="0" name="Spawn another object" sid="3782866898273694" type="Prozor15">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3449715800166808" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4750954367584436">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5870442693884981" type="Paradajz">
+                            <param id="0" name="Object">Prozor16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9995927590229936" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="3027894959101081" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1353938322782289" type="Prozor16" />
+                        <action id="0" name="Spawn another object" sid="6070943097893454" type="Prozor16">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6476344134177871" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7750148034840271">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6819696693325544" type="Kupus">
+                            <param id="0" name="Object">Prozor16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2711480757483288" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="7004980495039946" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8558513201700307" type="Prozor16" />
+                        <action id="0" name="Spawn another object" sid="1437771089001229" type="Prozor16">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1536956449088221" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8740618695185841">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5153840420293495" type="Paradajz">
+                            <param id="0" name="Object">Prozor17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="875536176372506" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="5198464092357803" type="Paradajz">
+                            <param id="0" name="Object">paradajzManji</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="6965198853423253" type="Prozor17" />
+                        <action id="0" name="Spawn another object" sid="9589898065024686" type="Prozor17">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8180223601310043" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2838019017766569">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7011704154644422" type="Kupus">
+                            <param id="0" name="Object">Prozor17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7989976863069916" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="8438493009981911" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4128008213130951" type="Prozor17" />
+                        <action id="0" name="Spawn another object" sid="918271818107863" type="Prozor17">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9295095751653093" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4463977255861707">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2513226479316824" type="Banana">
+                            <param id="0" name="Object">Prozor17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1854605281000624" type="Banana" />
+                        <action id="0" name="Spawn another object" sid="2719628731443122" type="Banana">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="4763656179884376" type="Prozor17" />
+                        <action id="0" name="Spawn another object" sid="8491282471264747" type="Prozor17">
+                            <param id="0" name="Object">ProzorPlpn2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8012635649724288" type="System">
+                            <param id="0" name="Variable">BulletNumber3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2545056710951955">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2829054095295308" type="Paradajz">
+                            <param id="0" name="Object">Prozor18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4133303837953626" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="7678418833422214" type="Paradajz">
+                            <param id="0" name="Object">paradajzKraci</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8126143607375174" type="Prozor18" />
+                        <action id="0" name="Spawn another object" sid="790278684744598" type="Prozor18">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9772900071960387" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5785129619540438">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8376434049959695" type="Kupus">
+                            <param id="0" name="Object">Prozor18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5112007085877263" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="3294376824920746" type="Kupus">
+                            <param id="0" name="Object">RsoKupus3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1081467339640694" type="Prozor18" />
+                        <action id="0" name="Spawn another object" sid="5243065014561835" type="Prozor18">
+                            <param id="0" name="Object">ProzorPlpn5</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5040922595440886" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="9397862486681002" title="Oruzja Collision sa Wall i Bullet distance">
+            <sub-events>
+                <event-block sid="4324744039882875">
+                    <conditions>
+                        <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="7873860736684128" type="Paradajz">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Distance">1000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="330538937870434" type="Paradajz" />
+                        <action id="0" name="Spawn another object" sid="7937858435895549" type="Paradajz">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4416931201133081" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9212298500952231">
+                    <conditions>
+                        <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="5474128923727897" type="Kupus">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Distance">700</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8207912252326572" type="Kupus" />
+                        <action id="0" name="Spawn another object" sid="4922312205975871" type="Kupus">
+                            <param id="0" name="Object">KupusSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1151392926286231" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1225603153831462">
+                    <conditions>
+                        <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="9999424947613038" type="Banana">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Distance">800</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3677893598925593" type="Banana" />
+                        <action id="0" name="Spawn another object" sid="1872373817648054" type="Banana">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2141050282964602" type="System">
+                            <param id="0" name="Variable">BulletNumber3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6392758890293064">
+                    <conditions>
+                        <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="5589484695593061" type="Flajka">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Distance">1000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4484122978639181" type="Flajka" />
+                        <action id="0" name="Spawn another object" sid="5556899571071804" type="Flajka">
+                            <param id="0" name="Object">ParadajzSmash</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="285236905486725" type="System">
+                            <param id="0" name="Variable">BulletNumber5</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3170141391131679">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="262857654789782" type="mousetarget" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2987103638457051" type="mousetarget" />
+                        <action id="-9" name="Set value" sid="9840792698513681" type="System">
+                            <param id="0" name="Variable">BulletNumber4</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8059118098402849">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3934702189982286" type="Paradajz">
+                            <param id="0" name="Object">wall2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4776735656352952" type="Paradajz" />
+                        <action id="-9" name="Set value" sid="7784447502547665" type="System">
+                            <param id="0" name="Variable">BulletNumber</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6275745481318383">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5776019032922631" type="Kupus">
+                            <param id="0" name="Object">wall2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6852212240562503" type="Kupus" />
+                        <action id="-9" name="Set value" sid="4360991713711714" type="System">
+                            <param id="0" name="Variable">BulletNumber2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6899106846808102">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="667114167479012" type="Banana">
+                            <param id="0" name="Object">wall2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4082983704392198" type="Banana" />
+                        <action id="-9" name="Set value" sid="1075116895277962" type="System">
+                            <param id="0" name="Variable">BulletNumber3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
